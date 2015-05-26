@@ -1,0 +1,30 @@
+/* TEAM */
+
+                            
+Frontend: Gregory - Kengreg.
+Site: ken-angel@hotmail.com
+Location: Panama.
+
+                         
+                 
+                        [...]
+						
+
+							
+/* THANKS */
+
+Name: Aneem
+
+						
+                 
+                        [...]
+                        
+
+                            
+/* SITE */
+
+                            
+Last update: 2015/5/25 
+Standards: HTML5, CSS3, javascript
+Components: Normalize, jQuery, 
+Software: Foundation framework
