@@ -27,15 +27,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
 <body>
-	<section class="row full wrap">
+	<section class="full wrap">
 		<header id="header">
-			<section class="row">
-				<article class="small-9 medium-5 large-3 columns">
+			<section class="row full">
+				<article class="small-9 medium-5 large-2 columns">
 					<div id="logo">
 						<img src="img/aneem-logo.png" alt="Logo Aneem">
 					</div>
 				</article>
-				<article class="small-3 medium-7 large-9 columns">  
+				<article class="small-3 medium-7 large-10 columns">  
 					<nav class="top-bar" data-topbar role="navigation">
   						<ul class="title-area">
     						<li class="name"></li>
@@ -51,10 +51,43 @@
     						</ul>
   						</section>
 					</nav>
-
 				</article>
 			</section>
 		</header>
+    <!-- start the main content -->
+    <section class="row full main">
+      <section class="previewvideo">
+        <article class="thumbpreview-video">
+          <ul>
+            <li><img src="img/thumbs-videos/broken-blade.jpg" alt="Broken Blade serie" /></li>
+            <li><img src="img/thumbs-videos/chrono-cross.jpg" alt="Chrono cross serie" /></li>
+            <li><img src="img/thumbs-videos/code-geass-agito.jpg" alt="Code Geass agito serie" /></li>
+            <li><img src="img/thumbs-videos/gundam00.jpg" alt="Gundam 00 serie" /></li>
+            <li><img src="img/thumbs-videos/sao.jpg" alt="Sword art online serie" /></li>
+            <li><img src="img/thumbs-videos/shingeki-no-kyojin.jpg" alt="Shingeki no kyojin serie" /></li>
+          </ul>
+        </article>
+        <!-- Video container -->
+        <article class="featured-video">
+          <div id="slider">
+            <a href="#" class="control_next">>></a>
+            <a href="#" class="control_prev"><</a>
+            <ul>
+                <li><iframe width="100%" height="315" src="https://www.youtube.com/embed/rQ1oo2oZx0Y" frameborder="0" allowfullscreen></iframe></li>
+                <li><iframe width="100%" height="315" src="https://www.youtube.com/embed/jP5Jm9eWrhw" frameborder="0" allowfullscreen></iframe></li>
+            </ul>  
+          </div>
+        </article>
+        <article class="video-options">
+          
+        </article>
+      </section>
+      <section class="searchblock">
+        dfdfd
+      </section>
+
+
+    </section>
 
 
 
@@ -64,10 +97,11 @@
 
 	</section>
 <script src="js/vendor/jquery.js"></script>
-  <script src="js/foundation/foundation.js"></script>
-  <script src="js/foundation/foundation.topbar.js"></script>
-  <script>
+<script src="js/vslider.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.topbar.js"></script>
+<script>
     $(document).foundation();
-  </script>
+</script>
 </body>
 </html>
