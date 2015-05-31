@@ -14,6 +14,7 @@
     <link href="css/norz.css" rel="stylesheet" />
     <link href="css/foundation.css" rel="stylesheet" />
     <link href="css/aneem.css" rel="stylesheet" />
+    <link href="css/slider.css" rel="stylesheet" />
     <link href="font-aw-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="author" href="humans.txt" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -57,7 +58,26 @@
     <!-- start the main content -->
     <section class="row full main">
       <section class="previewvideo">
-        <article class="thumbpreview-video">
+         <div class="thumb-box">
+            <ul class="thumbs">
+              <li><a href="#1" data-slide="1"><img src="img/thumbs-videos/broken-blade.jpg" alt="Broken blade episode 01"></a></li>
+              <li><a href="#2" data-slide="2"><img src="img/thumbs-videos/chrono-cross.jpg"  alt="Chrono Crusade ep 01"></a></li>
+              <li><a href="#3" data-slide="3"><img src="img/thumbs-videos/code-geass-agito.jpg" alt="Code geass agito ova"></a></li>
+              <li><a href="#4" data-slide="4"><img src="img/thumbs-videos/gundam00.jpg" alt="Gundam 00 episode 01"></a></li>
+              <li><a href="#4" data-slide="4"><img src="img/thumbs-videos/gundam00.jpg" alt="Gundam 00 episode 01"></a></li>
+            </ul>
+        </div>
+            <ul id="thumbnails">
+              <li><a href="#slide1"><iframe width="100%" height="315" src="https://www.youtube.com/embed/RPS2Kx4cb6E" frameborder="0" allowfullscreen></iframe></a></li>
+              <li><a href="#slide2"><iframe width="100%" height="315" src="https://www.youtube.com/embed/M8sGc-DH7xQ" frameborder="0" allowfullscreen></iframe></a></li>
+              <li><a href="#slide3"><img src="http://slippry.com/assets/img/image-3.jpg" alt="And this is some very long caption for slide 3. Yes, really long."></a></li>
+              <li><a href="#slide4"><img src="http://slippry.com/assets/img/image-4.jpg" alt="And this is some very long caption for slide 4."></a></li>
+            </ul>
+
+
+
+
+       <!--  <article class="thumbpreview-video">
           <ul>
             <li><img src="img/thumbs-videos/broken-blade.jpg" alt="Broken Blade serie" /></li>
             <li><img src="img/thumbs-videos/chrono-cross.jpg" alt="Chrono cross serie" /></li>
@@ -66,9 +86,9 @@
             <li><img src="img/thumbs-videos/sao.jpg" alt="Sword art online serie" /></li>
             <li><img src="img/thumbs-videos/shingeki-no-kyojin.jpg" alt="Shingeki no kyojin serie" /></li>
           </ul>
-        </article>
+        </article> -->
         <!-- Video container -->
-        <article class="featured-video">
+        <!--<article class="featured-video">
           <div id="slider">
             <a href="#" class="control_next">>></a>
             <a href="#" class="control_prev"><</a>
@@ -77,10 +97,10 @@
                 <li><iframe width="100%" height="315" src="https://www.youtube.com/embed/jP5Jm9eWrhw" frameborder="0" allowfullscreen></iframe></li>
             </ul>  
           </div>
-        </article>
-        <article class="video-options">
+        </article> -->
+        <!-- <article class="video-options">
           
-        </article>
+        </article> -->
       </section>
       <section class="searchblock">
         dfdfd
@@ -96,8 +116,9 @@
 
 
 	</section>
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vslider.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/cabin-slider.js"></script>
+<script src="js/script-slider.js" type="text/javascript"></script>
 <script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.topbar.js"></script>
 <script>
