@@ -24,6 +24,7 @@ html,body {
 	background: white;
 	height: 80px;
 	margin:300px 0 300px 0;
+  padding: 1.2em 0.5em;
 	width: 100%;
 }
 .previewvideo {
@@ -130,11 +131,8 @@ ul, li{
   content: 'More Options';
 }
 /* SEARCH BLOCK */
-.searchblock {
-  padding: 1.2em 0.5em;
-}
 .searchblock input {
-  border:1px red solid;
+  border:none;
   box-shadow: none;
   font-size: 1.4em;
   margin: 0 auto 0 10%;
@@ -174,7 +172,14 @@ ul, li{
     width: 30%;
   }
 }
-@media(max-width:959px){
+@media(max-width:1412px){
+  .searchblock input{
+    right: 5%;
+    position: absolute;
+    margin-top: -40px;
+  }
+}   
+@media(max-width:1090px){
   .previewvideo{
     left: 0;
     margin:0 auto;
@@ -184,8 +189,34 @@ ul, li{
     top:40px;
     width: 98%;
   }
-}
+  .btmain{
+    margin: 0;
+    width: auto;
 
+  }
+  .searchblock {
+    height: 60px;
+    margin: 180px 0;
+    padding: 0.5em 0 ;
+    width: auto;
+  }
+  .searchblock .row div:nth-child(1){
+    margin:0 0.3em;
+  }
+ .searchblock input{
+    margin-right: -200px;
+    position: absolute;
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 944px) and (max-width:1089px){
+.searchblock input{
+   margin: 0 auto;
+}
+.btmain{
+  margin:0;
+}
+}
 @media only screen and (min-width: 800px) and (max-width:1025px){
 	#logo{
 	width: 50%;
@@ -201,7 +232,19 @@ ul, li{
 	.top-bar{
 		margin:3em 0 0 -100px;
 	}
+   .searchblock input{
+    position: absolute;
+    width: 40%;
+  }
 }
+@media(max-width:799px){
+
+.btmain{
+  display:table-row;
+  margin:0;
+  width: inherit;
+}
+  }
 @media(max-width:641px){
 	#logo{
 		float: right;
@@ -212,7 +255,27 @@ ul, li{
 		background: none;
 		margin:1.6em 1.3em 0 0;
 	}
-  .searchblock{
-    margin:760px 0 300px 0;
+  .searchblock {
+    height: 120px;
+    padding: 0;
+  }
+  .searchblock .row div:nth-child(1){
+    border-color: white;
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    margin:0;
+  }
+  .searchblock .row div:nth-child(1), .searchblock .row div:nth-child(2){
+  width: 50%
+  }
+  .searchblock .row div:nth-child(3){
+    padding: 1em 0.5em;
+    text-align: center;
+  }
+    .searchblock input{
+    margin:0 auto;
+    padding: 0;
+    position:relative;
+    width: 50%;
   }
 }
