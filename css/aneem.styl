@@ -101,7 +101,91 @@ a.control_next {
 /* ---- Video slider ---- */
 
 
+ul, li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.opt-video {
+  margin:1em 0.5em;
+}
+.opt-video ul li{
+  display: inline-block;
+  width: 50%;
+}
+.opt-video ul li:nth-child(1){
+  background: #555354;
+  padding:0.6em;
+  text-align: center;
+}
+.opt{
+  font-weight: bold;
+  padding:0.6em;
+  text-align: center;
+}
+.opt:after {
+  content: 'More Options';
+}
+/* SEARCH BLOCK */
+.searchblock {
+  padding: 1.2em 0.5em;
+}
+.searchblock input {
+  border:1px red solid;
+  box-shadow: none;
+  font-size: 1.4em;
+  margin: 0 auto 0 10%;
+  width: 30%;
+}
+.searchblock ::-webkit-input-placeholder {
+  color: #555354;
+  text-align: center;
+}
+.searchblock ::-moz-placeholder{
+  color: #555354;
+  text-align: center;
+}
+.searchblock :-ms-input-placeholder{
+  color: #555354;
+  text-align: center;
+}
+.btmain {
+  background:#15a89e;
+  margin:0 5px;
+  padding: 0.6em 1em;
+  text-align: center;
+  width: 220px;
+}
+.cracc:after {
+  content: 'CREATE ACCOUNT/ SEE BENEFITS';
+  font-size: 0.7em;
+}
+
+
 /* MEDIA QUERIES */
+@media(max-width:1599px){
+  .searchblock input {
+    margin:0;
+  }
+  .previewvideo{
+    width: 30%;
+  }
+}
+@media(max-width:959px){
+  .previewvideo{
+    left: 0;
+    margin:0 auto;
+    padding: 0 0% 0 1%;
+    position: relative;
+    right:0;
+    top:40px;
+    width: 98%;
+  }
+}
+
 @media only screen and (min-width: 800px) and (max-width:1025px){
 	#logo{
 	width: 50%;
@@ -128,4 +212,7 @@ a.control_next {
 		background: none;
 		margin:1.6em 1.3em 0 0;
 	}
+  .searchblock{
+    margin:760px 0 300px 0;
+  }
 }
