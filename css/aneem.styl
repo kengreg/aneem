@@ -127,7 +127,7 @@ ul, li{
   padding:0.6em;
   text-align: center;
 }
-.opt:after {
+/*.opt:after {
   content: 'More Options';
 }
 /* SEARCH BLOCK */
@@ -161,9 +161,28 @@ ul, li{
   content: 'CREATE ACCOUNT/ SEE BENEFITS';
   font-size: 0.7em;
 }
+/* -------------- MAIN FOOTER ---------------*/
+.footgeneral {
+  margin:0 0 50px 0;
+}
+.footleft {
+  left: 0;
+}
+.footslider li:hover {
+  opacity: 0.6;
+}
+.titlethumfoot {
+  color: #A5A5A5;
+  font-size: 0.8em;
+  text-align: center;
+}
+.thumbstore {
+  background: white;
+  height: 180px;
+}
 
 
-/* MEDIA QUERIES */
+/*---------------------------- MEDIA QUERIES -------------------------------*/
 @media(max-width:1599px){
   .searchblock input {
     margin:0;
@@ -178,6 +197,9 @@ ul, li{
     position: absolute;
     margin-top: -40px;
   }
+  .footslider li {
+  height: 160px;
+}
 }   
 @media(max-width:1023px){
   .previewvideo{
@@ -208,6 +230,9 @@ ul, li{
     position: absolute;
     width: 40%;
   }
+    .footslider li {
+  height: 180px;
+}
 }
 @media only screen and (min-width: 944px) and (max-width:1089px){
 .searchblock input {
@@ -233,6 +258,7 @@ ul, li{
 	.top-bar{
 		margin:3em 0 0 -180px;
 	}
+
 }
 @media only screen and (min-width:642px) and (max-width: 800px){
 	#logo{
@@ -252,6 +278,20 @@ ul, li{
   display:table-row;
   margin:0;
   width: inherit;
+}
+.opt-video ul li:nth-child(2){
+  background: #474748;
+  height: 43px;
+}
+/* .opt:after {
+  content: "\f141";
+  font-family: FontAwesome;
+  font-size: 4.5em;
+  position: absolute;
+  top:-30px;
+} */
+  .footslider li {
+  height: 160px;
 }
   }
 @media(max-width:641px){
@@ -287,4 +327,7 @@ ul, li{
     position:relative;
     width: 50%;
   }
+  .footslider li {
+  height: auto;
+}
 }
