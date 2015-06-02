@@ -1,4 +1,5 @@
-var $j = jQuery.noConflict();
+var $j = jQuery;
+/* var $j = jQuery.noConflict(); */
 
 var realSlider= $j("ul#bxslider").bxSlider({
       speed:1000,
