@@ -8,6 +8,7 @@ var realSlider= $j("ul#bxslider").bxSlider({
       prevText:'',
       infiniteLoop:false,
       hideControlOnEnd:true,
+      controls:false,
       onSlideBefore:function($slideElement, oldIndex, newIndex){
         changeRealThumb(realThumbSlider,newIndex);
         
@@ -17,8 +18,8 @@ var realSlider= $j("ul#bxslider").bxSlider({
 
     
     var realThumbSlider=$j("ul#bxslider-pager").bxSlider({
-      minSlides: 5,
-      maxSlides: 5,
+      minSlides: 6,
+      maxSlides: 6,
       slideWidth: 156,
       slideMargin: 12,
       moveSlides: 1,
@@ -26,6 +27,7 @@ var realSlider= $j("ul#bxslider").bxSlider({
       speed:1000,
       infiniteLoop:true,
       hideControlOnEnd:true,
+      controls:false,
       nextText:'<span></span>',
       prevText:'<span></span>',
       onSlideBefore:function($slideElement, oldIndex, newIndex){
@@ -37,7 +39,7 @@ var realSlider= $j("ul#bxslider").bxSlider({
     
     linkRealSliders(realSlider,realThumbSlider);
     
-    if($j("#bxslider-pager li").length<6){
+    if($j("#bxslider-pager li").length<5){
       $j("#bxslider-pager .bx-next").hide();
     }
 
