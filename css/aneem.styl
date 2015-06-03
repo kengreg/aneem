@@ -1,5 +1,6 @@
 html,body {
 	background: #404041;
+   overflow-y: hidden; 
 }
 /* Home page styles */
 #header {
@@ -23,83 +24,17 @@ html,body {
 .searchblock {
 	background: white;
 	height: 80px;
-	margin:300px 0 300px 0;
+  margin:160px 0 220px 0; 
   padding: 1.2em 0.5em;
 	width: 100%;
 }
 .previewvideo {
 	position: absolute;
 	right: 5%;
-	top:160px;
+	top:80px;
 	width: 560px;
 }
 
-/* .thumbpreview-video ul{
-	margin:0.6em 0;
-	width: 100%;
-}
-.thumbpreview-video ul li{
-	display: inline-block;
-	width: 15.9%;
-}
-#slider {
-  border:5px solid white;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-#slider ul {
-  background: white;
-  height: 325px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-#slider ul li {
-  display: block;
-  float: left;
-  height: 325px;
-  line-height: 300px;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  text-align: center;
-  width: 560px;
-}
-
-a.control_prev, a.control_next {
-  background: #2a2a2a;
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-weight: 600;
-  font-size: 18px;
-  height: auto;
-  opacity: 0.8;
-  padding: 4% 3%;
-  position: absolute;
-  text-decoration: none;
-  top: 40%;
-  width: auto;
-  z-index: 999;
-}
-
-a.control_prev:hover, a.control_next:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
-}
-
-a.control_prev {
-  border-radius: 0 2px 2px 0;
-}
-
-a.control_next {
-  right: 0;
-  border-radius: 2px 0 0 2px;
-} */
 /* ---- Video slider ---- */
 
 
@@ -156,7 +91,7 @@ ul, li{
   margin:0 5px;
   padding: 0.6em 1em;
   text-align: center;
-  width: 220px;
+  width: 240px;
 }
 .cracc:after {
   content: 'Register';
@@ -190,18 +125,31 @@ ul, li{
   .previewvideo{
     width: 30%;
   }
+  .searchblock{
+      margin: 130px 0 135px;
+  }
+
 }
+@media only screen and (min-width:1413px) and (max-width:1516px){
+    .searchblock input{margin:-39px 0 0 516px;}
+  }
 @media(max-width:1412px){
   .searchblock input{
+    /* margin-top: -40px;
+    position: absolute; */
     right: 5%;
-    position: absolute;
-    margin-top: -40px;
   }
   .footslider li {
   height: 160px;
 }
+.btmain{
+  /* margin:0; */
+  width: 12%;
+}
 }   
 @media(max-width:1023px){
+  html, body{ overflow-y:visible;
+  }
   .previewvideo{
     left: 0;
     margin:0 auto;
@@ -218,7 +166,7 @@ ul, li{
   }
   .searchblock {
     height: 60px;
-    margin: 180px 0;
+    margin: 180px 0 60px 0;
     padding: 0.5em 0 ;
     width: auto;
   }
@@ -226,7 +174,7 @@ ul, li{
     margin:0 0.3em;
   }
  .searchblock input{
-    margin-right: -200px;
+    margin: 0px;
     position: absolute;
     width: 40%;
   }
